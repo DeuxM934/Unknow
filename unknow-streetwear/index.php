@@ -40,25 +40,26 @@ function h(string $v): string { return htmlspecialchars($v, ENT_QUOTES | ENT_SUB
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="UNKNOW — vêtements streetwear, pièces sélectionnées et silhouettes affirmées.">
-<title>UNKNOW® — Streetwear</title><link rel="stylesheet" href="/style.css">
+<title>UNKNOW® — Streetwear</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="header">
   <a class="brand" href="index.php">UNKNOW<span>®</span></a>
-  <nav><a href="index.php#shop">SHOP</a><a href="index.php#story">MANIFESTO</a><a class="cart-link" href="index.php?page=cart">BAG (<?= (int)$count ?>)</a></nav>
+  <nav><a href="index.php">ACCUEIL</a><a href="index.php#shop">BOUTIQUE</a><a href="index.php#story">À PROPOS</a><a href="mailto:contact@unknow.example">CONTACT</a></nav>
+  <div class="header-icons"><a href="index.php#shop" aria-label="Rechercher">⌕</a><a href="index.php?page=cart" aria-label="Compte">♙</a><a href="index.php?page=cart" aria-label="Panier">♧ <sup><?= (int)$count ?></sup></a></div>
 </header>
 <?php if ($notice): ?><div class="notice"><?= h($notice) ?></div><?php endif; ?>
 
 <?php if ($page === 'shop'): ?>
 <section class="hero">
-  <div class="hero-noise"></div>
-  <div class="hero-copy"><p class="eyebrow">DROP 001 — EVERYDAY UNIFORM</p><h1>NOT MADE<br>TO <em>FIT IN.</em></h1><p class="hero-sub">Des essentiels streetwear. Une attitude à part. Trouve ta propre silhouette.</p><a class="button button-light" href="#shop">SHOP THE DROP <span>↘</span></a></div>
-  <div class="hero-visual"><div class="hero-circle"></div><div class="poster"><span>U.</span><b>UN<br>KNOWN</b><small>OUTSIDE THE LINES<br>EST. 2026</small></div><div class="hero-stamp">NO RULES<br>JUST FORM.</div><div class="hero-index">001 / 026</div></div>
-  <div class="hero-bottom">INDEPENDENT STREETWEAR <span>—</span> BUILT FOR THE UNKNOWN</div>
+  <div class="hero-photo" role="img" aria-label="Veste technique noire dans une ambiance urbaine nocturne"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-copy"><p class="eyebrow">DROP 01</p><h1>UNKNOW<span>®</span></h1><p class="hero-sub">I AM ALREADY DEAD, SO I HAVE NOTHING LEFT TO LOSE</p><a class="button button-light" href="#shop">DÉCOUVRIR LA COLLECTION <span>→</span></a></div>
+  <div class="hero-bottom"><span>TECHNICAL STREETWEAR<br>WORLDWIDE</span><span class="coordinates">UNKNOWN<br>48.8566° N 2.3522° E&nbsp; ◎</span></div>
 </section>
-<section class="ticker"><div>UNKNOW® &nbsp; / &nbsp; MOVE DIFFERENT &nbsp; / &nbsp; UNKNOW® &nbsp; / &nbsp; MOVE DIFFERENT &nbsp; / &nbsp; UNKNOW® &nbsp; / &nbsp; MOVE DIFFERENT &nbsp; / &nbsp;</div></section>
 <section class="shop section" id="shop">
-  <div class="section-head"><div><p class="eyebrow">THE CURRENT DROP</p><h2>NEW ARRIVALS<span> (<?= count($products) ?>)</span></h2></div><p>Pièces sélectionnées pour le quotidien.<br>Quantités limitées selon les stocks.</p></div>
+
+  <div class="section-head"><div><p class="eyebrow">DROP 01</p><h2>NOS PRODUITS<span> (<?= count($products) ?>)</span></h2></div><p>TECHNICAL STREETWEAR<br>CONÇU POUR L’INCONNU.</p></div>
   <div class="products">
   <?php foreach ($products as $id => $p): ?>
     <article class="product">
@@ -74,7 +75,8 @@ function h(string $v): string { return htmlspecialchars($v, ENT_QUOTES | ENT_SUB
   <?php endforeach; ?>
   </div>
 </section>
-<section class="manifesto section" id="story"><p class="eyebrow">OUR MANIFESTO / 001</p><h2>DON'T FOLLOW<br>THE <em>FRAME.</em></h2><p>UNKNOW est un projet indépendant inspiré par la rue, les contrastes et les gens qui tracent leur propre chemin. Remplace ce texte par l'histoire réelle de ta marque.</p><a href="mailto:contact@unknow.example" class="text-link">CONTACT THE BRAND ↗</a></section>
+<section class="manifesto section" id="story"><div class="manifesto-photo"></div><div class="manifesto-copy"><p class="eyebrow">UNKNOW® / TECHNICAL EQUIPMENT</p><h2>PAS UN SIMPLE VÊTEMENT,<br><em>UNE DISCRÉTION TOTALE.</em></h2><p>Imperméable · Coupe-vent · Réfléchissant · Ultra léger · Confort maximum</p></div></section>
+<section class="details section"><div class="detail-image detail-one"></div><div class="detail-copy"><p class="eyebrow">MATIÈRES & TECHNIQUES</p><h3>CONÇU POUR LES ÉLÉMENTS.</h3><p>Tissu technique<br>Traitement déperlant<br>Fermetures étanches<br>Bandes réfléchissantes</p></div><div class="detail-image detail-two"></div><div class="detail-copy"><p class="eyebrow">DÉTAILS</p><h3>CHAQUE DÉTAIL COMPTE.</h3><p>Capuche intégrée<br>Zip étanche<br>Poches latérales<br>Coupe-vent</p></div></section>
 
 <?php elseif ($page === 'cart'): ?>
 <section class="inner-page"><p class="eyebrow">YOUR SELECTION</p><h1>YOUR BAG<span>.</span></h1>
@@ -94,5 +96,5 @@ function h(string $v): string { return htmlspecialchars($v, ENT_QUOTES | ENT_SUB
 <?php else: ?>
 <section class="inner-page"><h1>PAGE INTROUVABLE<span>.</span></h1><a class="button button-light" href="index.php">RETOUR AU SHOP</a></section>
 <?php endif; ?>
-<footer class="footer"><a class="brand" href="index.php">UNKNOW<span>®</span></a><div><a href="mailto:contact@unknow.example">CONTACT</a><a href="index.php#story">MANIFESTO</a><a href="admin/login.php">ADMIN</a></div><small>© <?= date('Y') ?> UNKNOW® — Prototype. Mentions légales et CGV à ajouter avant toute vente réelle.</small></footer>
+<footer class="footer"><a class="brand" href="index.php">UNKNOW<span>®</span></a><div><a href="mailto:contact@unknow.example">CONTACT</a><a href="index.php#shop">BOUTIQUE</a><a href="index.php#story">À PROPOS</a><a href="index.php?page=cart">PANIER (<?= (int)$count ?>)</a></div><small>© <?= date('Y') ?> UNKNOW® — Prototype. Mentions légales et CGV à ajouter avant toute vente réelle.</small></footer>
 </body></html>
