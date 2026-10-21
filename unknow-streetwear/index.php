@@ -65,7 +65,7 @@ function h(string $v): string { return htmlspecialchars($v, ENT_QUOTES | ENT_SUB
     <article class="product">
       <div class="product-image <?= h($p['tone'] ?? 'tone-black') ?>">
         <?php if (!empty($p['image'])): ?><img src="<?= h($p['image']) ?>" alt="<?= h($p['name']) ?>">
-        <?php else: ?><div class="garment-art"><span><?= h($p['mark'] ?? 'U.') ?></span><b><?= h($p['art'] ?? 'UNKNOW') ?></b></div><?php endif; ?>
+        <?php else: ?><div class="garment-art"><span><?= h($p['mark'] ?? 'W') ?></span><b><?= h($p['art'] ?? 'UNKNOW') ?></b></div><?php endif; ?>
         <span class="product-tag"><?= h($p['tag'] ?? 'DROP 001') ?></span>
         <?php if ((int)$p['stock'] <= 0): ?><span class="sold-out">SOLD OUT</span><?php endif; ?>
       </div>
