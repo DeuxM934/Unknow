@@ -40,7 +40,7 @@ function h(string $v): string { return htmlspecialchars($v, ENT_QUOTES | ENT_SUB
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="UNKNOW — vêtements streetwear, pièces sélectionnées et silhouettes affirmées.">
-<title>UNKNOW® — Streetwear</title><link rel="stylesheet" href="style.css">
+<title>UNKNOW® — Streetwear</title><link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <header class="header">
