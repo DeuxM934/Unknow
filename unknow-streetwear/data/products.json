@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Oversized Logo Tee",
+    "price": 24.9,
+    "category": "T-SHIRTS",
+    "stock": 12,
+    "tone": "tone-cream",
+    "tag": "BESTSELLER",
+    "mark": "U.",
+    "art": "UNKNOW",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "name": "Heavyweight Hoodie",
+    "price": 59.9,
+    "category": "HOODIES",
+    "stock": 8,
+    "tone": "tone-grey",
+    "tag": "DROP 001",
+    "mark": "U.",
+    "art": "NO RULES",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "name": "Utility Cargo Pant",
+    "price": 49.9,
+    "category": "BOTTOMS",
+    "stock": 5,
+    "tone": "tone-olive",
+    "tag": "LIMITED",
+    "mark": "U.",
+    "art": "FIELD UNIT",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "name": "Essential Cap",
+    "price": 19.9,
+    "category": "ACCESSORIES",
+    "stock": 15,
+    "tone": "tone-red",
+    "tag": "NEW",
+    "mark": "U.",
+    "art": "UNKNOWN",
+    "image": ""
+  }
+]
