@@ -1,50 +1,54 @@
 [
   {
     "id": 1,
-    "name": "Oversized Logo Tee",
-    "price": 24.9,
+    "name": "UNKNOW Logo T-Shirt",
+    "price": 34.9,
     "category": "T-SHIRTS",
     "stock": 12,
-    "tone": "tone-cream",
-    "tag": "BESTSELLER",
+    "tone": "tone-black",
+    "tag": "DROP 01",
     "mark": "U.",
     "art": "UNKNOW",
-    "image": ""
+    "image": "assets/products/tshirt-unknow.svg",
+    "description": "T-shirt noir coupe boxy, emblème réfléchissant sur le cœur et logo UNKNOW dans le dos."
   },
   {
     "id": 2,
-    "name": "Heavyweight Hoodie",
-    "price": 59.9,
-    "category": "HOODIES",
-    "stock": 8,
-    "tone": "tone-grey",
-    "tag": "DROP 001",
+    "name": "UNKNOW Techwear Jacket",
+    "price": 180.0,
+    "category": "OUTERWEAR",
+    "stock": 5,
+    "tone": "tone-black",
+    "tag": "LIMITED DROP",
     "mark": "U.",
-    "art": "NO RULES",
-    "image": ""
+    "art": "TECH SHELL",
+    "image": "assets/products/jacket-unknow.svg",
+    "description": "Veste noire techwear à capuche intégrée, visière et détails réfléchissants. Prototype à valider."
   },
   {
     "id": 3,
-    "name": "Utility Cargo Pant",
-    "price": 49.9,
-    "category": "BOTTOMS",
-    "stock": 5,
-    "tone": "tone-olive",
-    "tag": "LIMITED",
+    "name": "UNKNOW Trucker Cap",
+    "price": 34.9,
+    "category": "ACCESSORIES",
+    "stock": 15,
+    "tone": "tone-black",
+    "tag": "DROP 01",
     "mark": "U.",
-    "art": "FIELD UNIT",
-    "image": ""
+    "art": "TRUCKER",
+    "image": "assets/products/trucker-unknow.svg",
+    "description": "Casquette trucker noire, logo UNKNOW devant et derrière, emblème sur le côté et filet respirant."
   },
   {
     "id": 4,
-    "name": "Essential Cap",
-    "price": 19.9,
+    "name": "UNKNOW Reflective Gloves",
+    "price": 44.9,
     "category": "ACCESSORIES",
-    "stock": 15,
-    "tone": "tone-red",
+    "stock": 10,
+    "tone": "tone-black",
     "tag": "NEW",
     "mark": "U.",
-    "art": "UNKNOWN",
-    "image": ""
+    "art": "GLOVES",
+    "image": "assets/products/gloves-unknow.svg",
+    "description": "Gants streetwear noirs avec marquages réfléchissants, sans design de gants de moto."
   }
 ]
