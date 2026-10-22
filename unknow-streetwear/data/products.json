@@ -50,5 +50,18 @@
     "art": "GLOVES",
     "image": "assets/products/gloves-unknow.jpeg",
     "description": "Gants streetwear noirs avec marquages réfléchissants, sans design de gants de moto."
+  },
+    {
+    "id": 5,
+    "name": "UNKNOW Reflective Gloves",
+    "price": 44.9,
+    "category": "ACCESSORIES",
+    "stock": 10,
+    "tone": "tone-black",
+    "tag": "NEW",
+    "mark": "U.",
+    "art": "GLOVES",
+    "image": "assets/products/gloves-unknow.jpeg",
+    "description": "Gants streetwear noirs avec marquages réfléchissants, sans design de gants de moto."
   }
 ]
